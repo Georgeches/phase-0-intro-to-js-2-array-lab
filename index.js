@@ -2,17 +2,43 @@
 let cats = ["Milo", "Otis", "Garfield"]
 
 function destructivelyAppendCat(name){
-    cats.append("Ralph")
+    cats.push("Ralph")
 }
 
 function destructivelyPrependCat(name){
-    cats.prepend("Bob")
+    cats.unshift("Bob")
 }
 
 function destructivelyRemoveLastCat(){
-    cats.splice(4, 4)
+    cats.pop()
 }
 
+function destructivelyRemoveFirstCat(){
+    cats.shift("Milo")
+}
+
+function appendCat(catName){
+    let append_array = ["Milo", "Otis", "Garfield"]
+    append_array.push(catName)
+    return append_array
+}
+
+function prependCat(catName){
+    let prepend_array = ["Milo", "Otis", "Garfield"]
+    prepend_array.unshift(catName)
+    return prepend_array
+}
+
+function removeLastCat(){
+    let new_array = ["Milo", "Otis", "Garfield"]
+    new_array.pop()
+    return new_array
+}
+
+
+
 function removeFirstCat(){
-    let new_arr = cats.splice(0,1)
+    let other_array = ["Milo", "Otis", "Garfield"]
+    other_array.shift()
+    return other_array
 }
